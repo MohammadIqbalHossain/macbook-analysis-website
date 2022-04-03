@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useReview from '../../Hooks/useReview';
 import image from '../Assets/mack.png'
 import DisplayHomeReview from '../DisplayHomeReview/DisplayHomeReview';
@@ -12,6 +13,7 @@ const Home = () => {
     const homeReviewData = review.slice(0, 3);
 
     // console.log(homeReviewData);
+    const navigate = useNavigate();
 
     return (
         <div>
@@ -19,8 +21,12 @@ const Home = () => {
 
                 <div className="md:ml-44 m-16 order-2 md:order-1">
                     <h1 className="text-6xl font-mono font-bold text-blue-400 mb-5">This is laptop is your <br /> next laptop</h1>
+
                     <p className="text-xl font-serif text-gray-500 mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est hic ab excepturi molestiae sint nisi doloribus, dolor explicabo temporibus nam!</p>
-                    <button className="p-4 bg-blue-400 font-serif text-xl text-white rounded-lg hover:bg-green-300 ">Live Demo</button>
+
+                    <button className="p-4 bg-blue-400 font-serif text-xl text-white rounded-lg hover:bg-green-300 ">
+                        Live Demo
+                    </button>
                 </div>
 
                 <div className="order-1 md:order-2">
@@ -28,7 +34,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 ">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-4 mt-80 md:mt-0">
                 {
                     homeReviewData.map(review => <DisplayHomeReview
                         key={review._id}
@@ -37,6 +43,10 @@ const Home = () => {
                     </DisplayHomeReview>)
                 }
             </div>
+
+            <button onClick={() => navigate(`/reviews`)} className="p-4 bg-blue-400 font-serif text-xl text-white rounded-lg hover:bg-green-300 mb-5">
+                See All Reviews
+            </button>
         </div>
     );
 };
