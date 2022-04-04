@@ -59,11 +59,6 @@ const data =  [
 ];
 
 
-// Name == month;
-// Investemment  == amt,
-//uv == sell
-// cent == revenue
-
 
 export default function DisplayChart() {
   return (

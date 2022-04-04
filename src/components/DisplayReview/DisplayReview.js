@@ -1,7 +1,6 @@
 import React from 'react';
 
 const DisplayReview = ({ reviews }) => {
-    // console.log(reviews);
     const { name, picture, ratings, review } = reviews;
     return (
         <div>

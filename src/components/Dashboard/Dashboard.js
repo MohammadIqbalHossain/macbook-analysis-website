@@ -56,10 +56,10 @@ const Dashboard = () => {
 
     return (
         <div>
-            <div className="flex justify-center items-center h-[91vh]">
-
+            <h1 className="text-4xl font-bold font-mono mt-14">This years business dashboard...</h1>
+            <div className="flex flex-col md:flex-row justify-center items-center h-[91vh]">
                 <div>
-                    <AreaChart width={630} height={250} data={data}
+                    <AreaChart width={530} height={250} data={data}
                         margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                         <defs>
                             <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
@@ -89,4 +89,4 @@ const Dashboard = () => {
     );
 };
 
-export default Dashboard; <h1>This is Dashboard page.</h1>
+export default Dashboard;

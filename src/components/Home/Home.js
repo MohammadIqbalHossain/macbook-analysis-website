@@ -8,11 +8,8 @@ const Home = () => {
 
     const [review, setReview] = useReview([]);
 
-    // console.log(review);
-
     const homeReviewData = review.slice(0, 3);
 
-    // console.log(homeReviewData);
     const navigate = useNavigate();
 
     return (
