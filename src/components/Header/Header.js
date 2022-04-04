@@ -21,6 +21,10 @@ const Header = () => {
                     Dashboard
                 </NavLink>
 
+                <NavLink to='/blogs' className={({ isActive }) => isActive ? "text-orange-400 underline underline-offset-4" : ""}>
+                    Blogs
+                </NavLink>
+
                 <NavLink to='/about' className={({ isActive }) => isActive ? "text-orange-400 underline underline-offset-4" : ""}>
                     About
                 </NavLink>
