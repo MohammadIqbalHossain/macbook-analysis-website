@@ -24,8 +24,8 @@ const Home = () => {
 
                     <p className="text-xl font-serif text-gray-500 mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est hic ab excepturi molestiae sint nisi doloribus, dolor explicabo temporibus nam!</p>
 
-                    <button className="p-4 bg-blue-400 font-serif text-xl text-white rounded-lg hover:bg-green-300 ">
-                        Live Demo
+                    <button  className="p-4 bg-blue-400 font-serif text-xl text-white rounded-lg hover:bg-green-300 ">
+                        <a href="https://www.youtube.com/watch?v=NQesyAf849Q">Live Demo</a>    
                     </button>
                 </div>
 
