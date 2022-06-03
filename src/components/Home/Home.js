@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <div>
-            <div className="flex flex-col md:flex-row text-left items-center mx-auto  h-[91vh]">
+            <div className="flex flex-col sm:flex-row text-left items-center mx-auto  h-[91vh]">
 
                 <div className="md:ml-44 m-16 order-2 md:order-1">
                     <h1 className="text-6xl font-mono font-bold text-[#54bd79] mb-5 uppercase">So, This is the laptop you're gonna buy next</h1>
@@ -26,12 +26,12 @@ const Home = () => {
                     </button>
                 </div>
 
-                <div className="order-1 md:order-2">
+                <div className="order-1 sm:order-2">
                     <img className="w-[1400px]" src={image} alt="" />
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-4 mt-80 md:mt-0">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-4 mt-80 sm:mt-0">
                 {
                     homeReviewData.map(review => <DisplayHomeReview
                         key={review._id}
